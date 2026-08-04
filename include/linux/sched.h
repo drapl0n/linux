@@ -1637,6 +1637,7 @@ struct task_struct {
 #if IS_ENABLED(CONFIG_THREEI)
     struct threei_handler	__rcu   *threei_handler;
     struct threei_grate_ctx	__rcu	*threei_grate_ctx;
+    struct threei_inject		*threei_inject;
 #endif
 
 
