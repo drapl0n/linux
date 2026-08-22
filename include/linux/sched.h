@@ -1638,6 +1638,7 @@ struct task_struct {
     struct threei_handler	__rcu   *threei_handler;
     struct threei_grate_ctx	__rcu	*threei_grate_ctx;
     struct threei_inject		*threei_inject;
+    struct threei_fdtable	__rcu	*threei_fdtable;
 #endif
 
 
